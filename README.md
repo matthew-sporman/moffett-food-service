@@ -1,4 +1,4 @@
-# Moffett Food Service
+# The History of Moffett Food Service
 Moffett Food Service is one of the oldest family-owned
 businesses in Flint Michigan today; it is currently owned and run by
 the fifth generation of Moffett's. The Moffett family originated in
