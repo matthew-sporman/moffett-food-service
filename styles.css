@@ -1,0 +1,79 @@
+section {
+  display: none; /* hide all sections */
+}
+
+section.active {
+  display: block; /* show only the active section */
+}
+
+/* Font for regular text */
+#nav {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+#nav .nav-link {
+  border: 4px solid black;
+  text-decoration: none;
+    border-radius: 25px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 20px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+
+#our-history h1 {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  font-style: normal;
+  text-align: center;
+}
+
+#our-history p {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  padding: 0 30px;
+}
+
+/* Style the images */
+.downtown-moffett,
+.moffett-sons,
+.sam-l-moffett-grocer {
+  display: flex;
+  align-items: flex-start;
+  margin: 30px 30px;
+}
+
+.downtown-moffett img,
+.moffett-sons img,
+.sam-l-moffett-grocer img {
+  border-radius: 20px;
+}
+
+.moffett-sons {
+  flex-direction: row-reverse;
+}
+
+/* Style the paragraphs */
+.downtown-moffett p,
+.moffett-sons p,
+.sam-l-moffett-grocer p {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
