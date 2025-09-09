@@ -6,6 +6,13 @@ section.active {
   display: block; /* show only the active section */
 }
 
+#logo {
+  display: block;
+  margin: 20px auto;
+  width: 275px;
+  height: auto;
+}
+
 /* Font for regular text */
 #nav {
   font-family: "Story Script", sans-serif;
@@ -13,7 +20,7 @@ section.active {
   font-style: normal;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 2px;
   border-radius: 25px;
 }
 
@@ -25,18 +32,40 @@ section.active {
     font-weight: bold;
     font-size: 16px;
     display: inline-block;
-    margin: 0 5px;
-    padding: 20px 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  
+    margin: auto 13px;
+    padding: 25px;
+    background: linear-gradient(to right, #a94257 0%, #f8b3b5 50%, #a94257 50%, #f8fff9 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: border-bottom 0.5s ease;
 }
 
-#our-history h1 {
-  font-family: "Story Script", sans-serif;
-  font-weight: 400;
-  font-size: 48px;
-  font-style: normal;
-  text-align: center;
+.nav-link:hover, .nav-link:focus {
+    background-position: 0 0;
+    transform: scale(1.17);
+}
+
+.nav-link:active {
+    background-color: #f8b3b5;
+    transform: scale(0.90);
+}
+
+@keyframes gradientRing {
+  0% {
+    box-shadow: 0 0 0 4px transparent, 0 0 10px 4px #ff0000;
+  }
+  25% {
+    box-shadow: 0 0 0 4px transparent, 0 0 10px 4px #ffa500;
+  }
+  50% {
+    box-shadow: 0 0 0 4px transparent, 0 0 10px 4px #00ff00;
+  }
+  75% {
+    box-shadow: 0 0 0 4px transparent, 0 0 10px 4px #00ffff;
+  }
+  100% {
+    box-shadow: 0 0 0 4px transparent, 0 0 10px 4px #ff0000;
+  }
 }
 
 #our-history p {
@@ -76,4 +105,18 @@ section.active {
   line-height: 1.5;
   margin: 0;
   flex: 1;
+}
+
+.PDF-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#PDF-viewer {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  margin-top: 20px;
+
 }

@@ -1,13 +1,7 @@
-// Wait for the DOM to load
-document.addEventListener("DOMContentLoaded", function() {
-    // Get all the navigation links
+document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('section');
 
-    // Get all sections
-    const sections = document.querySelectorAll("main > section");
-
-
-    // Function to show a specific section
     function showSection(targetId) {
         // Hide all sections
         sections.forEach(section => section.style.display = "none");
@@ -19,26 +13,24 @@ document.addEventListener("DOMContentLoaded", function() {
             targetSection.style.display = "block";
         }
     }
-    
-    // Add an event listener for each link
+
+    // Add click event listeners to each nav link
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();  // Prevent the default anchor link behavior
-
-            // Remove the 'active' class from all links
-            navLinks.forEach(link => link.classList.remove('active'));
-
-            // Hide all sections
-            sections.forEach(section => section.style.display = "none");
-
-            const targetId = link.getAttribute("href").substring(1);
-
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
             showSection(targetId);
-
-            // Add the 'active' class to the clicked link
-            link.classList.add('active');
         });
     });
 
-    showSection("our-history"); // Show the first section by default
+    // Show the first section by default
+    showSection('our-history');
+});
+
+// For hightlighting active nav link
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function() {
+    document.querySelectorAll('.nav-link').forEach(btn => btn.classList.remove('active'));
+    this.classList.add('active');
+  });
 });
