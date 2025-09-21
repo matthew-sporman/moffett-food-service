@@ -1,9 +1,9 @@
 section {
-  display: none; /* hide all sections */
+  display: none;
 }
 
 section.active {
-  display: block; /* show only the active section */
+  display: block;
 }
 
 #logo {
@@ -13,7 +13,6 @@ section.active {
   height: auto;
 }
 
-/* Font for regular text */
 #nav {
   font-family: "Story Script", sans-serif;
   font-weight: 400;
@@ -30,7 +29,7 @@ section.active {
     border-radius: 25px;
     color: black;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     display: inline-block;
     margin: auto 13px;
     padding: 25px;
@@ -76,7 +75,6 @@ section.active {
   padding: 0 30px;
 }
 
-/* Style the images */
 .downtown-moffett,
 .moffett-sons,
 .sam-l-moffett-grocer {
@@ -95,13 +93,12 @@ section.active {
   flex-direction: row-reverse;
 }
 
-/* Style the paragraphs */
 .downtown-moffett p,
 .moffett-sons p,
 .sam-l-moffett-grocer p {
   font-family: "Story Script", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.5;
   margin: 0;
   flex: 1;
@@ -111,6 +108,7 @@ section.active {
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  display: flex;
 }
 
 #PDF-viewer {
@@ -119,4 +117,145 @@ section.active {
   border-radius: 25px;
   margin-top: 20px;
 
+}
+
+#photo-gallery-title {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#photos figure {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+#photos figure img {
+  height: 400px;
+  width: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.photo-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#photos figure figcaption {
+  font-family: "Story Script", sans-serif;
+  font-size: 18px;
+  color: #444;
+}
+
+#flint-mural-project-title {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+#flint-mural-project figure {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+#flint-mural-project figure img {
+  width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+#flint-mural-project figure figcaption {
+ font-family: "Story Script", sans-serif;
+  font-size: 18px;
+  color: #444;
+}
+
+#flint-mural-project p {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0 80px 20px 80px;
+  text-align: center;
+  margin: 25px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.social-icon {
+  width: 225px;
+  height: 225px;
+  margin: 50px 6px;
+  transition: transform 0.4s;
+}
+
+.social-icon:hover {
+  transform: scale(1.25);
+}
+
+#contact-us-title {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#phone-number {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#address {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#email {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  margin-top: 10px;
 }
