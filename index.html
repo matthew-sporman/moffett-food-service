@@ -99,7 +99,17 @@
 
             <section id = "products">
                 <div class= "PDF-container">
-                <embed id = PDF-viewer src="pdf/product-list.pdf" type="application/pdf">
+                <!-- Desktop version -->
+                <embed id="PDF-viewer-desktop" src="pdf/product-list.pdf" type="application/pdf">
+
+                <!-- Fallback link for mobile download -->
+                <p class="PDF-download">
+                    To view our product list, please download this PDF:
+                    <a href="pdf/product-list.pdf" target="_blank">
+                    <img src="images/pdf-downloader.png" alt="Download PDF" class="pdf-icon">
+                    </a>
+                </p>
+
                 </div>
             </section>
             

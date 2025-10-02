@@ -1,3 +1,7 @@
+/* =====================
+   DESKTOP STYLES
+   Screens above 1024px
+===================== */
 section {
   display: none;
 }
@@ -117,6 +121,19 @@ section.active {
   border-radius: 25px;
   margin-top: 20px;
 
+}
+
+#PDF-viewer-desktop {
+    display: block;
+    width: 100%;
+    height: 90vh;
+    border-radius: 25px;
+    margin: auto;
+}
+
+#PDF-viewer-mobile,
+.PDF-download {
+  display: none;
 }
 
 #photo-gallery-title {
@@ -258,4 +275,143 @@ section.active {
   flex: 1;
   text-align: center;
   margin-top: 10px;
+}
+
+/* =====================
+   MOBILE STYLES
+   Screens 1024px and below
+===================== */
+@media (max-width: 1024px) {
+
+  #logo {
+    width: 200px;
+    margin: 15px auto;
+  }
+
+  #nav {
+    flex-direction: row;
+     flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 5px;
+  }
+
+  #nav .nav-link {
+    font-size: 14px;
+    padding: 10px 12px;
+    margin: 4px;
+  }
+
+  #photo-gallery-title,
+  #flint-mural-project-title,
+  #contact-us-title {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+  }
+
+  #our-history p,
+  .downtown-moffett p,
+  .moffett-sons p,
+  .sam-l-moffett-grocer p,
+  #flint-mural-project p,
+  #phone-number,
+  #address,
+  #email {
+    font-size: 16px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .downtown-moffett,
+  .moffett-sons,
+  .sam-l-moffett-grocer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .downtown-moffett img,
+  .moffett-sons img,
+  .sam-l-moffett-grocer img {
+    max-width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  #photos figure,
+  #flint-mural-project figure {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  #photos figure img,
+  #flint-mural-project figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+
+  .photo-row,
+  .mural-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  #photos figure figcaption,
+  #flint-mural-project figure figcaption {
+    font-size: 16px;
+  }
+
+  #PDF-viewer-desktop {
+    display: none;
+  }
+
+  .PDF-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .PDF-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 25px;
+    font-family: "Story Script", sans-serif;
+}
+
+.pdf-icon {
+    width: 150px;
+    height: 150px;
+    border:black 4px solid;
+    border-radius: 20px;
+}
+
+  .social-links {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .social-icon {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+    transition: transform 0.3s;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.15);
+  }
 }
